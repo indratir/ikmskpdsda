@@ -1,0 +1,10 @@
+Ganti url pada file java :
+
+Folder app\src\main\java\com\lynx\ai\ikmskpdsidoarjo
+- FormPenilaian.java
+- LoginPegawai.java
+- LoginPetugas.java
+
+Folder app\src\main\java\com\lynx\ai\ikmskpdsidoarjo\popup
+- ResetPasswd.java
+- UbahPasswd.java

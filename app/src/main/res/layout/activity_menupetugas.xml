@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:id="@+id/layoutMenuPetugas"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgInfo"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/ic_info"-->
+                <!--/>-->
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_ikm"
+                />
+
+            <!--android:layout_below="@+id/imgInfo"-->
+            <!--android:layout_marginTop="20dp"-->
+
+            <TextView
+                android:id="@+id/textMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Menu"
+                android:layout_below="@+id/imgLogo"
+                android:textColor="#14a751"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/btnMenu1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textMenu"
+                android:layout_marginTop="20dp"
+                android:text="Ubah Password"
+                android:background="@color/colorPrimaryDark"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+            <Button
+                android:id="@+id/btnMenu2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnMenu1"
+                android:layout_marginTop="20dp"
+                android:text="Mulai Survey"
+                android:background="@color/colorPrimaryDark"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                />
+            <Button
+                android:id="@+id/btnMenu3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnMenu2"
+                android:layout_marginTop="20dp"
+                android:text="Log out"
+                android:background="@color/colorPrimaryDark"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/textInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnMenu3"
+                android:layout_marginTop="30dp"
+                android:text="Aplikasi Indeks Kepuasan Masyarakat\nSKPD Kabupaten Sidoarjo"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                />
+        </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/textHeadUbahPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah Password"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/textHeadPasswdLama"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/box"
+        android:hint="Masukkan Password Lama"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/textGrey"
+        android:layout_below="@+id/textHeadUbahPasswd"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textBlack"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/textHeadPasswdBaru"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/box"
+        android:hint="Masukkan Password Baru"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/textGrey"
+        android:layout_below="@+id/textHeadPasswdLama"
+        android:textColor="@color/textBlack"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/textHeadPasswdBaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnBackUbahPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
+            />
+
+        <Button
+            android:id="@+id/btnOkUbahPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnBackUbahPasswd"
+            android:layout_marginLeft="10dp"
+            android:text="OK"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
+            />
+    </RelativeLayout>
+</RelativeLayout>

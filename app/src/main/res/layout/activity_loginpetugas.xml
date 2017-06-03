@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lynx.ai.ikmskpdsidoarjo.LoginPetugas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:id="@+id/layoutLoginPetugas"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+            <!--<ImageView-->
+                <!--android:id="@+id/imgInfo"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/ic_info"-->
+                <!--/>-->
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/logo_ikm"
+                android:id="@+id/imgLogo"
+                android:layout_centerHorizontal="true"
+                />
+            <!--android:layout_below="@+id/imgInfo"-->
+            <!--android:layout_marginTop="20dp"-->
+
+            <TextView
+                android:layout_below="@+id/imgLogo"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textLoginPetugas"
+                android:text="Login Petugas"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textNip"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textLoginPetugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIP"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <com.github.pinball83.maskededittext.MaskedEditText
+                android:id="@+id/textNipPetugas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textNip"
+                android:inputType="number"
+                android:textColor="@color/textBlack"
+                android:background="@drawable/border_style2"
+                android:textAlignment="center"
+                app:mask="******** ****** * ***"
+                app:notMaskedSymbol="*"
+                />
+
+            <TextView
+                android:id="@+id/textPasswd"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textNipPetugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/textPasswordPetugas"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textPasswd"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textGrey"
+                android:background="@drawable/border_style2"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/btnLoginPetugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textPasswordPetugas"
+                android:layout_marginTop="20dp"
+                android:text="Masuk"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/textInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnLoginPetugas"
+                android:layout_marginTop="30dp"
+                android:text="Aplikasi Indeks Kepuasan Masyarakat\nSKPD Kabupaten Sidoarjo"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic"
+                />
+        </RelativeLayout>
+</ScrollView>

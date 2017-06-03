@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textHeadTim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tim Pengembang Aplikasi"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                />
+
+            <RelativeLayout
+                android:id="@+id/boxTim"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:layout_below="@+id/textHeadTim"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/boxWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/layoutAkbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgAkbar"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/boy"
+                            android:layout_centerHorizontal="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Akbar Nadzif"
+                            android:textColor="@color/textBlack"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/imgAkbar"
+                            android:layout_centerVertical="true"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layoutIndra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/layoutAkbar"
+                        android:layout_marginLeft="25dp"
+                        >
+                        <ImageView
+                            android:id="@+id/imgIndra"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/boy"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Indra Tirta N"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/textBlack"
+                            android:layout_below="@+id/imgIndra"
+                            android:layout_centerVertical="true"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textBlack"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/boxWrapper"
+                    android:layout_marginTop="10dp"
+                    android:text="Politeknik Elektronika Negeri Surabaya\n© 2016"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boxTim"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgSda"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo_sda"
+                    />
+                <ImageView
+                    android:id="@+id/imgPens"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo_pens"
+                    android:layout_toRightOf="@+id/imgSda"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/layoutPenilaian"
+    >
+        <LinearLayout
+            android:id="@+id/boxWrapPenilaian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+            <TextView
+                android:id="@+id/textHeadPenilaian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form Penilaian Pelayanan"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />2
+            <!--<LinearLayout-->
+                <!--android:id="@+id/boxUnsur"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:background="@color/box"-->
+                <!--android:padding="10dp"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:id="@+id/textUnsur"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/textBlack"-->
+                    <!--android:text="Bagaimana pemahaman saudara tentang kemudahan prosedur pelayanan di unit ini?"-->
+                    <!--/>-->
+                <!--<Spinner-->
+                    <!--android:id="@+id/spinnerUnsur"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/colorPrimaryDark"-->
+                    <!--android:popupBackground="@color/colorPrimaryDark"-->
+                    <!--&gt;-->
+                <!--</Spinner>-->
+            <!--</LinearLayout>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnNext1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Selanjutnya"-->
+                <!--android:background="@color/colorPrimaryDark"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--/>-->
+        </LinearLayout>
+</ScrollView>
